@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flexbox grid layout w/ Mobile Menu</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="table.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="form.js"></script>
+
+<style>
+
+.img-container {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+.img-container1 {
+  float: right;
+  width: 15%;
+  padding: 5px;
+}
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+  <div class="container">
+    <img src="logo.png" width=15%>
+    <h1 class="site-title">Jingzhe IT training</h1>
+  <span class="site-tagline">Welcome to the IT world!</span>
+</div>
+</header>
+<nav class="main-nav">
+<div class="container">
+  <ul>
+    <li class="mobile-button"><a href="#">Menu</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about us.html">About Us</a></li>
+  <li><a href="course.html">Course</a></li>
+  <li><a href="enquiry.html">Enquiry</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="left.jpg" alt="Italy" style="width: 100%">
+  </div>
+  <div class="img-container1">
+  <img src="right.jpg" alt="Forest" style="width:100%">
+  </div>
+</div>
+
+<section class="content">
+<div class="full-bleed cool-photo"></div>
+
+<article class="post">
+  <div class="container">
+    <img src="keyboard.png" width=100% height=400px>
+      <h2>Enquiry form to request more information</h2>
+
+<fieldset>
+      <form name="myform" method="post" action="mailto:username@hotmail.com" onsubmit="return validateform()" >  
+        <h4>Name:</h4>
+        <input type="text" name="name" style="width:250px;height:30px"><br/>  
+        <h4>Telephone</h4>
+        <input type="password" name="telephone" style="width:250px;height:30px"><br/>  
+        <h4>Home</h4>
+        <input type="text" name="home" style="width:250px;height:30px"><br/> 
+        <h4>E-mail</h4> 
+        <input type="text" name="email" style="width:250px;height:30px"><br/>
+        <h4>The way you like to learn:</h4>
+        <input type="text" name="learn" style="width:1100px;height:200px"><br/><br/>
+        <input type="submit" value="register">  
+        </form>
+</fieldset><br><br>
+
+    <div class="columns">
+      <div class="item">
+        <h4 class="item-title">WELCOME TO JINGZHE IT TRAINING</h4>
+        </div>
+
+      <div class="item">
+        <h4 class="item-title">THANK YOU FOR VIEWING THIS SITE</h4>
+    </div>
+  </div>   
+</article>  
+</section>
+
+<footer class="footer">
+<div class="container">
+  <p>Footer Text, Yo. Made by Seven</p>
+</div>
+</footer>
+<!-- partial -->
+
+</body>
+</html>

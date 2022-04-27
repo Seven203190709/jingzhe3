@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flexbox grid layout w/ Mobile Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+
+.img-container {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+.img-container1 {
+  float: right;
+  width: 15%;
+  padding: 5px;
+}
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+  <div class="container">
+    <img src="logo.png" width=15%>
+    <h1 class="site-title">Jingzhe IT training</h1>
+  <span class="site-tagline">Welcome to the IT world!</span>
+</div>
+</header>
+<nav class="main-nav">
+<div class="container">
+  <ul>
+    <li class="mobile-button"><a href="#">Menu</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about us.html">About Us</a></li>
+  <li><a href="course.html">Course</a></li>
+  <li><a href="enquiry.html">Enquiry</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="left.jpg" alt="Italy" style="width: 100%">
+  </div>
+  <div class="img-container1">
+  <img src="right.jpg" alt="Forest" style="width:100%">
+  </div>
+</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="p1.png" style="width:100%">
+  <img class="mySlides" src="p2.png" style="width:100%">
+  <img class="mySlides" src="p3.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<section class="content">
+<div class="full-bleed cool-photo"></div>
+
+<article class="post">
+  <div class="container">
+      <h2>Introduction</h2>
+    <div class="columns">
+      <div class="item">
+        <h4 class="item-title">Jingzhe</h4>
+        <p>This is an IT skills training institution, where you can learn easily and happily and master enough cool and practical IT skills. Jingzhe, taken from the twenty-four solar terms in China. During the stinging season, spring is sprouting, and nature has a new vitality. It means that this organization can flourish and deliver more and better personnel to the IT industry.</p> </div>
+
+      <div class="item">
+        <h4 class="item-title">Purpose</h4>
+        <p>Jingzhe training institution aims to cultivate students with excellent morals. In addition to IT skills training, it also educates students on moral etiquette, so that students can know how to survive better in the future society. Because the IT industry is a very regulated industry, if you don't pay attention to the cultivation of personal qualities, it will cause huge losses to the society and individuals.</p>
+    </div>
+  </div>   
+</article>  
+</section>
+
+<footer class="footer">
+<div class="container">
+  <p>Footer Text, Yo. Made by Seven</p>
+</div>
+</footer>
+
+<!-- partial -->
+
+</body>
+</html>
